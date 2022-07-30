@@ -1,0 +1,48 @@
+#test{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+}
+#boite-pricipale{
+
+
+  justify-content: center;
+  align-items: center;
+}
+#element{
+
+  width: fit-content;
+  margin: 12px;
+
+}
+#element1{
+
+  width: fit-content;
+
+  justify-content: center;}
+
+  #element1 h2{
+
+  }
+
+#boite1{
+margin-left: 100px;
+
+}
+#boite1 div img{
+  text-align: center;
+  margin: auto;
+  position: rigth;
+  }
+
+
+  #image{
+
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    }

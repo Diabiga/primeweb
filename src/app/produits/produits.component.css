@@ -1,0 +1,122 @@
+*,::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content--product{
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  height: fit-content;
+}
+
+.container--product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all--elemnt{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 1rem;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.all--elemnt{
+  grid-template-columns: repeat(2,1fr);
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+.all--elemnt{
+  grid-template-columns: repeat(1,1fr);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.section{
+ background:#3333;
+
+
+}
+*{
+	margin:0;
+	padding:0;
+
+}
+.container{
+
+	margin:auto;
+}
+.lol{
+ text-align: center;
+}
+.row{
+  margin: 10px ;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 1rem;
+}
+.footer-col{
+
+  width: 33.33%;
+  padding: 0 15px;
+  box-shadow: -1 0 10px #000000;
+
+}
+.img{
+  padding: 10px;
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+} */

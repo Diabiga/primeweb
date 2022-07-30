@@ -1,0 +1,52 @@
+<header style="overflow: hidden;">
+  <div class="container" style="height: 50px;">
+
+    <div class="row" id="content--header">
+      <div class="col-md-3 col-sm-3 col-xs-3">
+        <div class="logo">
+          <img src="assets/prime/logoprime.png" alt="Logo" style="margin-left: -100px;margin-top: -20px; ">
+        </div>
+
+      </div>
+
+
+      <div class="col-md-9 col-sm-9 col-9 text-end" id="toggle-btn">
+
+
+        <div class="menu_icon" [class.menu_iconClass]="menu_icon_variable" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+
+        <div class="menu" [class.menuClasse]="menuVariable">
+          <ul>
+            <li><a mat-button routerLink='accueil'> {{menu1}}</a></li>
+            <li><a mat-button routerLink='presentation'>{{menu2}} </a></li>
+            <li><a mat-button routerLink='service'>{{menu3}}</a></li>
+            <li><a mat-button routerLink='produits'>{{menu4}}</a></li>
+            <li><a mat-button routerLink='clients'>{{menu5}}</a></li>
+            <li><a mat-button routerLink='recrutement'>{{menu6}} </a></li>
+            <li class="dropdown">
+              <p class="text--name">AIDE</p>
+              <div class="dropdown-content">
+                <li><a mat-button routerLink='contacts'>{{menu7}} </a></li>
+                <li><a mat-button href='http://192.168.2.97/mantisbt/login_page.php'
+                    target="_blank">{{menu8}} </a></li>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+  <div class="contenu" [class.contenuClasse]="contenueVariable">
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
+</header>
